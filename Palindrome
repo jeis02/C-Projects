@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string sStr = "madam";
+    int iLen = sStr.length();
+    bool bIsPalindrome = true;
+    for (int i = 0; i < iLen / 2; ++i) {
+        if (sStr[i] != sStr[iLen - i - 1]) {
+            bIsPalindrome = false;
+            break;
+        }
+    }
+    if (bIsPalindrome)
+        std::cout << sStr << " is a palindrome." << std::endl;
+    else
+        std::cout << sStr << " is not a palindrome." << std::endl;
+    return 0;
+}
