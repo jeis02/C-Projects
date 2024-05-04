@@ -1,0 +1,27 @@
+#include <iostream>
+
+int main() {
+    float fNumber1 = 10.5;
+    float fNumber2 = 5.2;
+    char cOperator = '+';
+    float fResult;
+    switch (cOperator) {
+        case '+':
+            fResult = fNumber1 + fNumber2;
+            break;
+        case '-':
+            fResult = fNumber1 - fNumber2;
+            break;
+        case '*':
+            fResult = fNumber1 * fNumber2;
+            break;
+        case '/':
+            fResult = fNumber1 / fNumber2;
+            break;
+        default:
+            std::cout << "Invalid operator!" << std::endl;
+            return 1;
+    }
+    std::cout << "Result: " << fResult << std::endl;
+    return 0;
+}
